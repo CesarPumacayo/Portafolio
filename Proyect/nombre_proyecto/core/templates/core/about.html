@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+
+{% block title %}Sobre mi{% endblock %}
+
+{% block background %}{% load static %}{% static '/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+<span class="subheading">Acerca de</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-2 col-md-3 offset-lg-1">
+      <div>
+        <img class="img-fluid avatar" src="{% static '/img/portada.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Sobre mí</h2>
+      <p>Soy César, actualmente estudio en la UTN y también participo en el programa Codo a Codo. Durante este curso, he adquirido habilidades y conocimientos valiosos en el campo de la programación y desarrollo web.</p>
+      <p>¡No dudes en contactarme si necesitas ayuda en relacion a cualquier tema en el que pueda asistirte!</p>
+    </div>
+  </div>
+  
+    
+{% endblock %}
